@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Base
+  title="Applied Wireless Detection Research"
+  description="TraceLock Labs is an applied research laboratory focused on distributed wireless detection systems, sensor architectures, and RF situational awareness."
+>
+  <Header slot="header" />
+
+  <Hero
+    highlight="TraceLock Labs"
+    title="Wireless Detection Systems for Situational Awareness"
+    subtitle="An applied research laboratory focused on distributed wireless detection systems and sensor architectures that inform structured security decisions."
+  />
+
+  <!-- Research Focus -->
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-4">Research Focus</h2>
+        <p class="text-slate-400">
+          TraceLock&#8482; Labs develops sensing technologies that generate detection signals from physical environments. These signals serve as inputs to structured security decision architectures.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="card text-center py-8">
+          <div class="w-12 h-12 mx-auto rounded-full bg-navy-700/50 border border-navy-600/50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-slate-100 mb-2">Wireless Detection</h3>
+          <p class="text-slate-500 text-sm">Identifying unauthorized transmitters, surveillance devices, and spectrum anomalies.</p>
+        </div>
+
+        <div class="card text-center py-8">
+          <div class="w-12 h-12 mx-auto rounded-full bg-navy-700/50 border border-navy-600/50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-slate-100 mb-2">Distributed Sensors</h3>
+          <p class="text-slate-500 text-sm">Networked sensor architectures for continuous environmental monitoring.</p>
+        </div>
+
+        <div class="card text-center py-8">
+          <div class="w-12 h-12 mx-auto rounded-full bg-navy-700/50 border border-navy-600/50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-slate-100 mb-2">AI Classification</h3>
+          <p class="text-slate-500 text-sm">Machine learning approaches for RF signal identification and threat categorization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section class="section bg-navy-900/50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6 text-center">Part of a Larger Architecture</h2>
+        <div class="card bg-gradient-to-br from-navy-800 to-navy-900">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div>
+              <div class="text-amber-500 font-heading font-semibold text-sm mb-1">TraceLock Labs</div>
+              <div class="text-slate-500 text-xs">Develops sensing technologies</div>
+            </div>
+            <div>
+              <div class="text-slate-200 font-heading font-semibold text-sm mb-1">
+                <a href="https://aamcyber.com/sdos" class="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">SDOS Architecture</a>
+              </div>
+              <div class="text-slate-500 text-xs">Converts signals into structured decisions</div>
+            </div>
+            <div>
+              <div class="text-slate-200 font-heading font-semibold text-sm mb-1">
+                <a href="https://aamcyber.com" class="hover:text-amber-400 transition-colors" target="_blank" rel="noopener noreferrer">AAM Cyber</a>
+              </div>
+              <div class="text-slate-500 text-xs">Implements decisions in real environments</div>
+            </div>
+          </div>
+          <p class="text-slate-500 text-xs text-center mt-4">TraceLock Labs develops sensing technologies, SDOS converts those signals into structured security decisions, and AAM Cyber implements those decisions in real operational environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-4">Programs</h2>
+        <p class="text-slate-400 mb-8">
+          TraceLock Labs pursues research through government innovation programs and collaborative partnerships.
+        </p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="/programs" class="card group">
+            <h3 class="font-heading font-semibold text-slate-100 mb-2 group-hover:text-amber-500 transition-colors">SBIR / STTR</h3>
+            <p class="text-slate-400 text-sm">Small Business Innovation Research and Small Business Technology Transfer programs aligned with defense and security research priorities.</p>
+          </a>
+          <a href="/contact" class="card group">
+            <h3 class="font-heading font-semibold text-slate-100 mb-2 group-hover:text-amber-500 transition-colors">Research Partnerships</h3>
+            <p class="text-slate-400 text-sm">Collaborative research opportunities with universities, innovation programs, and defense technology organizations.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-navy-900/50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-heading font-bold text-slate-100 mb-4">
+        Interested in Research Collaboration?
+      </h2>
+      <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+        TraceLock Labs welcomes inquiries from research partners, universities, and government innovation programs.
+      </p>
+      <a href="/contact" class="btn btn-primary">
+        Partner With Us
+      </a>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>

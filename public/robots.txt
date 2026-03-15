@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tracelocklabs.com/sitemap-index.xml

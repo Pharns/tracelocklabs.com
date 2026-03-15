@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base
+  title="Privacy Policy"
+  description="TraceLock Labs privacy policy. We collect minimal data and respect your privacy."
+>
+  <Header slot="header" />
+
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl font-heading font-bold text-slate-100 mb-8">Privacy Policy</h1>
+
+        <div class="space-y-8 text-slate-400">
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Overview</h2>
+            <p>TraceLock Labs respects your privacy. This policy describes what information we collect through this website and how we use it.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Information We Collect</h2>
+            <p class="mb-3">We collect only the information you voluntarily provide through our contact form:</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Name and email address</li>
+              <li>Organization name</li>
+              <li>Inquiry type and message content</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">How We Use Your Information</h2>
+            <p>Contact form submissions are used solely to respond to your inquiry. We do not sell, share, or distribute your information to third parties.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Analytics</h2>
+            <p>This website does not currently use analytics tracking. No cookies are set and no personally identifiable information is collected through browsing.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Data Storage</h2>
+            <p>Contact form data is processed through secure, self-hosted infrastructure. We do not use third-party marketing platforms or customer data warehouses.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Contact</h2>
+            <p>For privacy-related questions, contact <a href="mailto:lab@tracelocklabs.com">lab@tracelocklabs.com</a>.</p>
+          </div>
+
+          <p class="text-slate-500 text-sm">Last updated: March 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>

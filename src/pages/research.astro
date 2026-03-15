@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Base
+  title="Research"
+  description="Core research agenda for TraceLock Labs: wireless threat detection, sensor architectures, and AI-assisted RF classification."
+>
+  <Header slot="header" />
+
+  <Hero
+    highlight="Research"
+    title="Research Agenda"
+    subtitle="Advancing the science of wireless detection through applied research in threat identification, sensor design, and machine learning."
+    showCta={false}
+  />
+
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            TraceLock Labs conducts applied research at the intersection of wireless security, distributed sensing, and decision support. Our research agenda is organized around three primary areas, each contributing to the broader goal of converting environmental signals into actionable security intelligence.
+          </p>
+        </div>
+
+        <!-- Research Area 1 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">Wireless Threat Detection</h3>
+          <div class="space-y-3 text-slate-400">
+            <p>
+              Research into methods for identifying unauthorized wireless devices, covert transmitters, and surveillance equipment across multiple frequency bands. This includes developing detection signatures for known threat categories and anomaly detection approaches for novel or unknown devices.
+            </p>
+            <p class="text-sm text-slate-500">
+              Focus areas: rogue access point detection, Bluetooth surveillance identification, cellular IMSI catcher detection, IoT device enumeration.
+            </p>
+          </div>
+        </div>
+
+        <!-- Research Area 2 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">Sensor Architectures</h3>
+          <div class="space-y-3 text-slate-400">
+            <p>
+              Design and evaluation of distributed sensor network topologies for physical security environments. Research examines how sensor placement, communication protocols, and data aggregation strategies affect detection coverage and reliability.
+            </p>
+            <p class="text-sm text-slate-500">
+              Focus areas: mesh sensor networks, edge computing for signal processing, sensor fusion algorithms, environmental resilience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Research Area 3 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">AI-Assisted RF Classification</h3>
+          <div class="space-y-3 text-slate-400">
+            <p>
+              Machine learning approaches for automated identification and classification of RF signals. Research focuses on training models to distinguish between benign and potentially hostile wireless activity, reducing false positives, and improving classification accuracy in noisy environments.
+            </p>
+            <p class="text-sm text-slate-500">
+              Focus areas: signal fingerprinting, supervised classification models, anomaly scoring, transfer learning for new device types.
+            </p>
+          </div>
+        </div>
+
+        <!-- SDOS Connection -->
+        <div class="divider"></div>
+        <div class="text-center">
+          <p class="text-slate-400 mb-4">
+            Research outputs from TraceLock Labs serve as signal inputs to the <a href="https://aamcyber.com/sdos" target="_blank" rel="noopener noreferrer">Secure Decision Operating System (SDOS)</a>, where they are evaluated within a structured decision architecture.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>

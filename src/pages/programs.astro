@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Base
+  title="Programs"
+  description="TraceLock Labs SBIR/STTR research programs and collaborative research partnerships."
+>
+  <Header slot="header" />
+
+  <Hero
+    highlight="Programs"
+    title="Research Programs"
+    subtitle="TraceLock Labs pursues research through government innovation programs and collaborative partnerships aligned with national security priorities."
+    showCta={false}
+  />
+
+  <!-- SBIR/STTR -->
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">SBIR / STTR</h2>
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            The Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) programs provide funding for small businesses to conduct research and development with commercial and defense applications.
+          </p>
+          <p>
+            TraceLock Labs aligns its research priorities with SBIR/STTR topic areas related to wireless security, distributed sensing, and situational awareness. Our technology development follows the standard phase progression:
+          </p>
+        </div>
+
+        <div class="space-y-6 mb-12">
+          <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                <span class="text-amber-500 font-heading font-bold text-sm">I</span>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-slate-100 mb-1">Phase I — Feasibility</h3>
+                <p class="text-slate-400 text-sm">Establish technical feasibility and demonstrate proof of concept for wireless detection approaches.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                <span class="text-amber-500 font-heading font-bold text-sm">II</span>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-slate-100 mb-1">Phase II — Development</h3>
+                <p class="text-slate-400 text-sm">Develop prototypes, conduct field testing, and validate detection capabilities in representative environments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                <span class="text-amber-500 font-heading font-bold text-sm">III</span>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-slate-100 mb-1">Phase III — Commercialization</h3>
+                <p class="text-slate-400 text-sm">Transition research into operational systems through government contracts or commercial deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Research Partnerships -->
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">Research Partnerships</h2>
+        <div class="space-y-4 text-slate-400 mb-8">
+          <p>
+            TraceLock Labs welcomes collaborative research relationships with universities, defense innovation organizations, and technology partners working in related areas.
+          </p>
+          <p>
+            Partnership opportunities include joint research proposals, technology evaluation, sensor network testing, and academic collaboration on RF security topics.
+          </p>
+        </div>
+
+        <div class="card bg-gradient-to-br from-navy-800 to-navy-900 text-center py-8">
+          <p class="text-slate-300 mb-4">
+            Interested in exploring a research partnership?
+          </p>
+          <a href="/contact" class="btn btn-primary">
+            Contact the Lab
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>

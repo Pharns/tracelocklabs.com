@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base
+  title="Terms of Service"
+  description="TraceLock Labs terms of service for website usage."
+>
+  <Header slot="header" />
+
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl font-heading font-bold text-slate-100 mb-8">Terms of Service</h1>
+
+        <div class="space-y-8 text-slate-400">
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Acceptance of Terms</h2>
+            <p>By accessing this website, you agree to these terms. If you do not agree, please discontinue use.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Website Content</h2>
+            <p>Content on this website is provided for informational purposes. TraceLock Labs makes reasonable efforts to ensure accuracy but does not guarantee that all information is current or error-free.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Intellectual Property</h2>
+            <p>All content, trademarks, and intellectual property on this site are owned by TraceLock Labs or its affiliates. TraceLock is a trademark. Unauthorized reproduction or distribution is prohibited.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Limitation of Liability</h2>
+            <p>TraceLock Labs is not liable for any damages arising from the use of this website or reliance on its content.</p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-heading font-semibold text-slate-100 mb-3">Contact</h2>
+            <p>Questions about these terms may be directed to <a href="mailto:lab@tracelocklabs.com">lab@tracelocklabs.com</a>.</p>
+          </div>
+
+          <p class="text-slate-500 text-sm">Last updated: March 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>

@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Base
+  title="Technology"
+  description="TraceLock sensing systems, distributed sensor networks, and AI-assisted RF analysis for wireless situational awareness."
+>
+  <Header slot="header" />
+
+  <Hero
+    highlight="Technology"
+    title="Wireless Detection Systems"
+    subtitle="Sensing technologies that generate detection signals from physical environments, providing situational awareness across the RF spectrum."
+    showCta={false}
+  />
+
+  <!-- Wireless Detection -->
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">Wireless Detection Systems</h2>
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            TraceLock&#8482; detection systems identify and classify wireless activity within monitored environments. Using software-defined radio (SDR) technology and purpose-built sensor hardware, these systems detect unauthorized transmitters, surveillance devices, and spectrum anomalies that conventional network monitoring cannot observe.
+          </p>
+          <p>
+            Detection capabilities span multiple frequency bands and protocol types, from Wi-Fi and Bluetooth to cellular, IoT, and non-standard RF emissions.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">Distributed Sensor Networks</h2>
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            Rather than relying on a single monitoring point, TraceLock Labs researches distributed sensor architectures that provide overlapping coverage across physical environments. Networked sensors share detection data, enabling correlation analysis and reducing blind spots.
+          </p>
+          <p>
+            This architecture supports continuous monitoring rather than point-in-time assessments, providing persistent situational awareness rather than periodic snapshots.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">RF Situational Awareness</h2>
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            RF situational awareness extends beyond simple detection. It involves understanding the electromagnetic environment in context — distinguishing between authorized and unauthorized activity, identifying patterns that suggest deliberate surveillance, and establishing baselines that make anomalies visible.
+          </p>
+          <p>
+            TraceLock systems are designed to produce structured signal data that can be evaluated within a broader <a href="https://aamcyber.com/sdos" target="_blank" rel="noopener noreferrer">security decision architecture</a>.
+          </p>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="card bg-gradient-to-br from-navy-800 to-navy-900">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-4">Core Technology Areas</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 class="font-heading font-semibold text-slate-200 text-sm mb-1">Hardware</h4>
+              <ul class="text-slate-400 text-sm space-y-1">
+                <li>Software-defined radio (SDR) receivers</li>
+                <li>Raspberry Pi-based sensor nodes</li>
+                <li>Custom antenna configurations</li>
+                <li>Edge computing platforms</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-slate-200 text-sm mb-1">Software</h4>
+              <ul class="text-slate-400 text-sm space-y-1">
+                <li>Kismet wireless monitoring</li>
+                <li>Signal classification algorithms</li>
+                <li>Distributed data correlation</li>
+                <li>AI-assisted RF analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>

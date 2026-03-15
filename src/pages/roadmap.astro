@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Base
+  title="Research Roadmap"
+  description="TraceLock Labs research roadmap: Phase I through Phase III progression for wireless detection technology maturation."
+>
+  <Header slot="header" />
+
+  <Hero
+    highlight="Roadmap"
+    title="Research Roadmap"
+    subtitle="A phased approach to developing and maturing wireless detection systems from proof of concept through operational deployment."
+    showCta={false}
+  />
+
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            TraceLock Labs follows a structured research progression that advances wireless detection capabilities from initial feasibility through operational readiness. Each phase builds on validated results from the previous stage.
+          </p>
+        </div>
+
+        <!-- Phase I -->
+        <div class="card mb-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+              <span class="text-amber-500 font-heading font-bold text-sm">I</span>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-slate-100">Feasibility &amp; Proof of Concept</h3>
+          </div>
+          <div class="space-y-3 text-slate-400 text-sm">
+            <p>Establish that the core detection approach works in controlled conditions.</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Single-node wireless detection using SDR and Kismet</li>
+              <li>Baseline RF environment characterization</li>
+              <li>Initial device classification accuracy testing</li>
+              <li>Proof of concept for distributed sensor communication</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase II -->
+        <div class="card mb-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+              <span class="text-amber-500 font-heading font-bold text-sm">II</span>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-slate-100">Prototype &amp; Field Testing</h3>
+          </div>
+          <div class="space-y-3 text-slate-400 text-sm">
+            <p>Develop multi-node prototypes and validate in representative environments.</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Multi-sensor distributed detection network</li>
+              <li>AI-assisted signal classification models</li>
+              <li>Field testing in varied physical environments</li>
+              <li>Integration with SDOS decision architecture</li>
+              <li>Performance benchmarking and reliability testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase III -->
+        <div class="card mb-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+              <span class="text-amber-500 font-heading font-bold text-sm">III</span>
+            </div>
+            <h3 class="text-lg font-heading font-semibold text-slate-100">Operational Deployment</h3>
+          </div>
+          <div class="space-y-3 text-slate-400 text-sm">
+            <p>Transition validated technology into production-ready systems.</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Hardened sensor hardware for continuous operation</li>
+              <li>Scalable deployment architecture</li>
+              <li>Automated alerting and reporting</li>
+              <li>Commercial and government deployment pathways</li>
+              <li>Ongoing research feedback loop</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card bg-gradient-to-br from-navy-800 to-navy-900 text-center py-8">
+          <p class="text-slate-300 mb-4">
+            Interested in contributing to or supporting this research?
+          </p>
+          <a href="/contact" class="btn btn-primary">
+            Contact the Lab
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>
