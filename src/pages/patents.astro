@@ -1,0 +1,185 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Base
+  title="Patents"
+  description="Patent estate covering TraceLock multi-domain RF sensing technology. Four U.S. provisional patent applications filed April–May 2026."
+>
+  <Header slot="header" />
+
+  <Hero
+    highlight="Patents"
+    title="Patent Estate"
+    subtitle="TraceLock multi-domain sensing technology is covered by four U.S. provisional patent applications filed between April and May 2026."
+    showCta={false}
+  />
+
+  <section class="section">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+
+        <!-- Overview -->
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            TraceLock&#8482; sensing and detection technology is covered by an active patent estate. Filings establish priority dates for the core inventions and position the technology for non-provisional conversion in 2027.
+          </p>
+          <p>
+            This page summarizes patent provenance at a capability level. Implementation detail, claim text, and architectural specifics are held until non-provisional publication.
+          </p>
+        </div>
+
+        <!-- Provisional 1 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">U.S. Provisional Patent Application No. 64/029,300</h3>
+          <div class="space-y-3 text-slate-400">
+            <p class="text-sm text-slate-500">
+              Filed: April 4, 2026 &nbsp;&middot;&nbsp; Confirmation No. 5548
+            </p>
+            <p>
+              Scope relevant to TraceLock: multi-domain RF sensing as an input to structured security decision architectures. Radio-frequency situational awareness fused with behavioral and network signals to feed runtime policy decisions. Risk-tiered classification governs how sensor signal evidence is acted upon at the moment of decision.
+            </p>
+          </div>
+        </div>
+
+        <!-- Provisional 2 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">U.S. Provisional Patent Application No. 64/049,300</h3>
+          <div class="space-y-3 text-slate-400">
+            <p class="text-sm text-slate-500">
+              Filed: April 25, 2026 &nbsp;&middot;&nbsp; Confirmation No. 2350
+            </p>
+            <p>
+              Scope relevant to TraceLock: sensor-actuated dispatch architecture &mdash; routing decisions based on sensor evidence at the moment of action rather than post-hoc audit. Modular architecture supporting hot-swappable detection modules with integrity verification.
+            </p>
+          </div>
+        </div>
+
+        <!-- Provisional 3 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">U.S. Provisional Patent Application No. 64/067,427</h3>
+          <div class="space-y-3 text-slate-400">
+            <p class="text-sm text-slate-500">
+              Filed: May 16, 2026 &nbsp;&middot;&nbsp; Confirmation No. 1226
+            </p>
+            <p class="italic">
+              Governed Autonomous Execution System with Structural Isolation, Formal Enforcement Invariance, Governance Lifecycle Properties, and Demonstrated Resilience.
+            </p>
+            <p>
+              Scope relevant to TraceLock: structural isolation properties between sensing layer and decision layer &mdash; the sensor cannot modify the policy under which its evidence is evaluated. Formal enforcement invariance and adversarial-hardening properties extend to the sensor-evidence pathway.
+            </p>
+          </div>
+        </div>
+
+        <!-- Provisional 4 -->
+        <div class="card mb-8">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-3">U.S. Provisional Patent Application No. 64/069,200</h3>
+          <div class="space-y-3 text-slate-400">
+            <p class="text-sm text-slate-500">
+              Filed: May 19, 2026 &nbsp;&middot;&nbsp; Confirmation No. 7393
+            </p>
+            <p class="italic">
+              Governed Persistent Orchestration Identity for AI Agent Runtimes Across Sessions and Modalities.
+            </p>
+            <p>
+              Scope relevant to TraceLock: governance identity continuity for systems integrating sensor evidence into AI agent runtimes &mdash; including deployments where TraceLock sensor evidence feeds AI-assisted decision pipelines across sessions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Combined Scope -->
+        <div class="card mb-12 bg-gradient-to-br from-navy-800 to-navy-900">
+          <h3 class="text-lg font-heading font-semibold text-amber-500 mb-4">Combined Scope</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-slate-400 mb-4">
+            <div>
+              <p class="text-2xl font-heading font-bold text-slate-100">4</p>
+              <p class="text-sm">U.S. provisional patent applications</p>
+            </div>
+            <div>
+              <p class="text-2xl font-heading font-bold text-slate-100">45</p>
+              <p class="text-sm">patent families</p>
+            </div>
+            <div>
+              <p class="text-2xl font-heading font-bold text-slate-100">313</p>
+              <p class="text-sm">total claims (46 independent + 267 dependent)</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500">
+            Non-provisional filing target: April 4, 2027 (Provisional #1 expiry &mdash; strict-conservative posture preserves all four priority dates).
+          </p>
+        </div>
+
+        <!-- Verification -->
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">Verification</h2>
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            All four patent application numbers are public records and can be verified via the United States Patent and Trademark Office (USPTO) Patent Center.
+          </p>
+          <div class="card">
+            <table class="w-full text-sm text-slate-400">
+              <thead>
+                <tr class="border-b border-navy-800">
+                  <th class="text-left py-2 font-heading font-semibold text-slate-200">Filing</th>
+                  <th class="text-left py-2 font-heading font-semibold text-slate-200">Application No.</th>
+                  <th class="text-left py-2 font-heading font-semibold text-slate-200">Filed</th>
+                  <th class="text-left py-2 font-heading font-semibold text-slate-200">Confirmation No.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-navy-900">
+                  <td class="py-2">Provisional 1</td>
+                  <td class="py-2">64/029,300</td>
+                  <td class="py-2">2026-04-04</td>
+                  <td class="py-2">5548</td>
+                </tr>
+                <tr class="border-b border-navy-900">
+                  <td class="py-2">Provisional 2</td>
+                  <td class="py-2">64/049,300</td>
+                  <td class="py-2">2026-04-25</td>
+                  <td class="py-2">2350</td>
+                </tr>
+                <tr class="border-b border-navy-900">
+                  <td class="py-2">Provisional 3</td>
+                  <td class="py-2">64/067,427</td>
+                  <td class="py-2">2026-05-16</td>
+                  <td class="py-2">1226</td>
+                </tr>
+                <tr>
+                  <td class="py-2">Provisional 4</td>
+                  <td class="py-2">64/069,200</td>
+                  <td class="py-2">2026-05-19</td>
+                  <td class="py-2">7393</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Disclosure Posture -->
+        <h2 class="text-2xl font-heading font-bold text-slate-100 mb-6">Disclosure Posture</h2>
+        <div class="space-y-4 text-slate-400 mb-12">
+          <p>
+            Material on this page is published at a capability and scope level only. Implementation detail, claim text, and architectural specifics are held until non-provisional publication.
+          </p>
+          <p>
+            For collaboration discussions that require deeper technical detail, an NDA framework is available through the <a href="/programs" class="text-amber-500 hover:text-amber-400">research programs</a> intake.
+          </p>
+        </div>
+
+        <!-- Footer note -->
+        <div class="divider"></div>
+        <div class="text-center">
+          <p class="text-slate-400">
+            "Patent-filed" refers to U.S. Provisional Patent Applications, which establish a priority date. Provisionals are not equivalent to issued patent rights or exclusionary authority. Non-provisional conversion is targeted for April 4, 2027.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</Base>
